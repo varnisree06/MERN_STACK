@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.heading {
+    color: black;
+  }
+  
+  /*
+  px - sam
+  em = 16px - 1em 
+  vh - 100%  heig screen 
+  vw - 100% wit of Screen 
+  */
+  
+  .paragrap {
+    color: green;
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  
+    border-width: 5px;
+    /* border-top-width: 20px;
+    border-bottom-width: 50px; */
+    border-color: greenyellow;
+    /* border-top-color: gray; */
+    /* Border Style is Mandatory */
+    border-style: solid; 
+    /* border-radius: 35px;
+    border-top-left-radius: 2px; */
+    /* border: 5px green solid; */
+  }
+  
+  .card {
+    /* background-color: red; */
+    text-align: center;
+    border-style: solid;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .main-bg {
+    background-image: url("https://ik.imagekit.io/4z8covdo9/MERN%20BATCH%202/maldives-island_74190-479.jpg_w=1380&t=st=1704981475~exp=1704982075~hmac=56cbb0aed48c20ed8cbd2dca2a44e66b17faae55660ae042127e62373a1b6a5b?updatedAt=1704981513345");
+    height: 800px;
+    width: 500px;
+  }
+  
+  .heading {
+    color: black;
+  }
+  
+  /*
+  px - sam
+  em = 16px - 1em 
+  vh - 100%  heig screen 
+  vw - 100% wit of Screen 
+  */
+  
+  .paragrap {
+    color: green;
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  
+    border-width: 5px;
+    /* border-top-width: 20px;
+    border-bottom-width: 50px; */
+    border-color: greenyellow;
+    /* border-top-color: gray; */
+    /* Border Style is Mandatory */
+    border-style: solid; 
+    /* border-radius: 35px;
+    border-top-left-radius: 2px; */
+    /* border: 5px green solid; */
+  }
+  
+  .card {
+    /* background-color: red; */
+    text-align: center;
+    border-style: solid;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .main-bg {
+    background-image: url("https://ik.imagekit.io/4z8covdo9/MERN%20BATCH%202/maldives-island_74190-479.jpg_w=1380&t=st=1704981475~exp=1704982075~hmac=56cbb0aed48c20ed8cbd2dca2a44e66b17faae55660ae042127e62373a1b6a5b?updatedAt=1704981513345");
+    height: 800px;
+    width: 500px;
+  }
+  
+  .favourite-bg {
+    background-image: url("https://img.freepik.com/free-photo/beautiful-tropical-empty-beach-sea-ocean-with-white-cloud-blue-sky-background_74190-13668.jpg?t=st=1708704797~exp=1708708397~hmac=16ec1f6780db8ab069b0f24e3d3053ca11dd525207438425026617b508436a9d&w=740");
+    height: 800px;
+    width: 500px;
+    background-repeat: no-repeat;
+  
+  }
+  
+  .bg-red-500 {
+    background-color: red;
+  }
+  
+  .bg-red-500 {
+    background-color: red;
+  }

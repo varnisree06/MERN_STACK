@@ -1,0 +1,36 @@
+.heading{
+    color: brown;
+}
+.para{
+    color: black;
+    /*background-color: aquamarine; 
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;*/
+   /* border-color: blueviolet;*/
+   /* border-width: 5px; */
+   /* border-radius: 50px; */
+   /* border-style: solid; */
+   /* border-top-color: hotpink ;
+    border-top-left-radius: 2px;*/ 
+    
+}
+.card{
+   /* background-color: red; */
+    text-align: center;
+    border-style: solid;
+    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 5px;
+    
+
+}
+
+.main-bg{
+    background-image: url(https://ik.imagekit.io/x87mcctn7/MERN%201/photo-1507525428034-b723cf961d3e.avif?updatedAt=1708858851858); height: 800px; width: 500px;
+}
+.favourite-bg{
+    background-image: ;
+}
