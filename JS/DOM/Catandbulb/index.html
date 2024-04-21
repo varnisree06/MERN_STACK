@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat & Bulb</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="bg-black text-white h-screen">
+        <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/bulb-go-on-img.png?updatedAt=1702818139573" alt="Image1"
+          id="img-1" class="h-44" />
+        <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/cat-img.png?updatedAt=1702818167774" alt="Image2" id="img-2"
+          class="h-44" />
+    
+        <p id="paragraph">Switched On</p>
+        <button id="btn-on">ON</button>
+        <button id="btn-off">OFF</button>
+      </div>
+    
+      <script>
+        const Img1 = document.getElementById("img-1");
+        const Img2 = document.getElementById("img-2");
+    
+        const paragraph = document.getElementById("paragraph");
+    
+        const buttonOn = document.getElementById("btn-on");
+        const buttonOff = document.getElementById("btn-off");
+    
+        buttonOn.addEventListener("click", () => {
+          Img1.src = "https://ik.imagekit.io/4z8covdo9/Full%20stack/bulb-go-on-img.png?updatedAt=1702818139573"
+          Img2.src = "https://ik.imagekit.io/4z8covdo9/Full%20stack/cat-img.png?updatedAt=1702818167774"
+          paragraph.textContent = "Switched On"
+          buttonOn.style.backgroundColor = "green"
+          buttonOff.style.backgroundColor = ""
+          console.log("Button Clicked")
+        })
+    
+        buttonOff.addEventListener("click", () => {
+          Img1.src = "https://ik.imagekit.io/4z8covdo9/Full%20stack/bulb-go-off-img.png?updatedAt=1702818065200"
+          Img2.src = "https://ik.imagekit.io/4z8covdo9/Full%20stack/cat-eyes-img.png?updatedAt=1702818102345"
+          paragraph.textContent = "Switched Off"
+          buttonOff.style.backgroundColor = "red"
+          buttonOn.style.backgroundColor = ""
+          console.log("Button Clicked")
+        })
+      </script>
+    
+</body>
+</html>

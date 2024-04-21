@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+
+    <h1>Counter</h1> 
+  <p id="counter">0</p>
+
+  <button id="sub-btn">-</button>
+  <button id="reset-btn">Reset</button>
+  <button id="add-btn">+</button>
+
+  <script>
+    //   <p id="counter">0</p>
+    const paragraphElement = document.getElementById("counter");
+
+    const buttonSub = document.getElementById("sub-btn");
+    //   <button id="sub-btn">-</button>
+    const resetButton = document.getElementById("reset-btn");
+    //   <button id="reset-btn">Reset</button>
+    const buttonAdd = document.getElementById("add-btn");
+    // <button id="add-btn">+</button>
+
+    buttonSub.addEventListener("click", () => {
+      const val = paragraphElement.textContent
+      paragraphElement.textContent = parseInt(val) - 1
+    })
+
+    resetButton.addEventListener("click", () => {
+      paragraphElement.textContent = 0
+    })
+
+    buttonAdd.addEventListener("click", () => {
+      const val = paragraphElement.textContent
+      paragraphElement.textContent = parseInt(val) + 1
+    })
+
+  </script>
+
+
+
+
+  
+</body>
+</html>

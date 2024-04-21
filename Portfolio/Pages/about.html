@@ -4,24 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PortFolio Site</title>
+  <title>About Page</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../style.css">
 
 </head>
 
 <body>
-
-
-  <div class="2xl:container h-screen">
+  <div class="2xl:container">
 
     <!-- Header Starting -->
     <div class="w-[90%] md:w-[60%] mx-auto grid grid-cols-1 gap-2 py-5">
       <h1 class="text-4xl font-medium">My Portfolio</h1>
       <div class="flex justify-between">
-        <p class="text-lg">S Varnikha Sree</p>
+        <p class="text-lg">Varnikha</p>
         <svg viewbox="0 0 1024 1024" fill="currentColor" height="1em" width="1em">
           <path
             d="M632 888H392c-4.4 0-8 3.6-8 8v32c0 17.7 14.3 32 32 32h192c17.7 0 32-14.3 32-32v-32c0-4.4-3.6-8-8-8zM512 64c-181.1 0-328 146.9-328 328 0 121.4 66 227.4 164 284.1V792c0 17.7 14.3 32 32 32h264c17.7 0 32-14.3 32-32V676.1c98-56.7 164-162.7 164-284.1 0-181.1-146.9-328-328-328zm127.9 549.8L604 634.6V752H420V634.6l-35.9-20.8C305.4 568.3 256 484.5 256 392c0-141.4 114.6-256 256-256s256 114.6 256 256c0 92.5-49.4 176.3-128.1 221.8z" />
@@ -30,77 +28,64 @@
     </div>
     <!-- Header Ending -->
 
-    <!-- HeroSection Starting -->
-    <div class="w-[90%] md:w-[60%] mx-auto grid grid-cols-1 py-5">
-      <p class="text-5xl font-['Satoshi-Regular'] leading-[65px]">Hi i'm Vivid Varnikha, <span
-          class="hover:underline">Designer & Engineer</span> , ADHD
-        meets
-        Innovation! </p>
+    <!-- NavBar Starting -->
+    <div class="hidden w-[90%] md:w-[60%] mx-auto md:grid grid-cols-1 py-5 space-y-4">
+      <div class="bg-white ring-1 ring-gray-100 drop-shadow-md py-5 rounded-full">
+        <ul class="flex justify-evenly items-center">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Pages/about.html">About</a></li>
+          <li><a href="../Pages/project.html">Project</a></li>
+          <li><a href="../Pages/resume.html">Resume</a></li>
+          <li><a href="../Pages/tools.html">Tools</a></li>
+          <li><a href="../Pages/ama.html">Ama</a></li>
+        </ul>
+      </div>
     </div>
-    <!-- HeroSection Ending -->
+    <!-- NavBar Ending -->
+
+    <!--oldBar : hidden md:grid-->
+    <!--newBar:  md:hidden fixed bottom-0 -->
+
+    <!-- NavBar Starting -->
+    <div class="md:hidden fixed bottom-0 w-[100%] mx-auto grid grid-cols-1 py-5">
+      <div class="w-[90%] mx-auto">
+        <nav class="bg-white ring-1 ring-gray-100 drop-shadow-md py-5 rounded-full overflow-x-auto">
+          <ul class="flex justify-evenly items-center">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Pages/about.html">About</a></li>
+            <li><a href="../Pages/project.html">Project</a></li>
+            <li><a href="../Pages/resume.html">Resume</a></li>
+            <li><a href="../Pages/tools.html">Tools</a></li>
+            <li><a href="../Pages/ama.html">Ama</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+    <!-- NavBar Ending -->
 
     <!-- Content Starting -->
-    <div class="w-[90%] md:w-[60%] mx-auto grid grid-cols-1 py-5">
-      <ul class="space-y-4">
-        <li class=" text-2xl font-['Satoshi-Regular'] hover:underline hover:-rotate-1 ease-out">
-          <a href="./Pages/about.html" class="flex justify-between">
-            About
-            <svg fill="currentColor" viewbox="0 0 16 16" height="1em" width="1em">
-              <path fillrule="evenodd"
-                d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z" />
-            </svg>
-          </a>
-        </li>
+    <div class="w-[90%] md:w-[60%] mx-auto grid grid-cols-1 py-5 space-y-4">
+      <h1 class="text-3xl font-['Satoshi-Regular']">Meet Vivid Varnikha: Designer, Engineer, and ADHD-Inspired Innovator!
+      </h1>
 
+      <p class="text-lg font-['Satoshi-Regular']">Welcome to my corner of the web! I'm [Your Name], a burgeoning software engineer with a passion for crafting digital experiences that captivate and innovate.
 
-        <li class="flex justify-between text-2xl font-['Satoshi-Regular'] hover:-rotate-1 ease-out">
-          <a href="./Pages/project.html" class="flex justify-between w-[100%]">
-            Project
-            <svg fill="currentColor" viewbox="0 0 16 16" height="1em" width="1em">
-              <path fillrule="evenodd"
-                d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z" />
-            </svg>
-          </a>
-        </li>
-
-        <li class="flex justify-between text-2xl font-['Satoshi-Regular'] hover:-rotate-1 ease-out">
-          <a href="./Pages/resume.html" class="flex justify-between w-[100%]">
-            Resume
-            <svg fill="currentColor" viewbox="0 0 16 16" height="1em" width="1em">
-              <path fillrule="evenodd"
-                d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z" />
-            </svg>
-          </a>
-        </li>
-
-        <li class="flex justify-between text-2xl font-['Satoshi-Regular'] hover:-rotate-1 ease-out">
-          <a href="./Pages/tools.html" class="flex justify-between w-[100%]">
-            Tools
-            <svg fill="currentColor" viewbox="0 0 16 16" height="1em" width="1em">
-              <path fillrule="evenodd"
-                d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z" />
-            </svg>
-          </a>
-        </li>
-   
+        With a foundation in HTML, CSS, and JavaScript, I've embarked on a journey to master the art of web development. From building responsive layouts to adding interactivity with JavaScript, I relish the challenge of bringing ideas to life in the digital realm.
         
-        <li class="flex justify-between text-2xl font-['Satoshi-Regular'] hover:-rotate-1 ease-out">
-          <a href="./Pages/ama.html" class="flex justify-between w-[100%]">
-            Ama
-            <svg fill="currentColor" viewbox="0 0 16 16" height="1em" width="1em">
-              <path fillrule="evenodd"
-                d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z" />
-            </svg>
-          </a>
-        </li>
-      </ul>
+        But my journey doesn't stop there. I'm also diving into the world of Python, exploring its versatility and power in solving a wide range of problems. From scripting automation tasks to developing web applications, Python fuels my curiosity and drives me to push the boundaries of what I can create.
+        
+        As an aspiring software engineer, I'm committed to continuous learning and growth. Whether it's mastering new languages and frameworks or diving into the depths of computer science, I embrace each challenge as an opportunity to expand my skills and deepen my understanding of technology.
+        
+        Join me on this exciting journey as I strive to become a skilled software engineer, crafting elegant solutions and pushing the boundaries of what's possible in the world of technology. </p>
+
     </div>
     <!-- Content Ending -->
 
     <!-- Footer Starting -->
-    <div class="w-[90%] md:w-[60%] mx-auto grid grid-cols-1 py-8">
+    <div class="w-[90%] md:w-[60%] mx-auto grid grid-cols-1 py-5">
       <div class="flex justify-between">
-        <p class="font-['Satoshi-Regular']">2023 by Varnikha. All rights reserved.</p>
+        <p>2023 by Varnikha. All rights reserved.</p>
         <div class="flex gap-4">
           <svg viewbox="0 0 1024 1024" fill="currentColor" height="1em" width="1em">
             <path
@@ -117,16 +102,12 @@
               d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0138.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z" />
           </svg>
         </div>
+
       </div>
 
     </div>
     <!-- Footer Ending -->
   </div>
-
-  <!-- <p class="test">Hi i'm Spikey Sanju, Designer & Engineer, Founder of Design Studio , where ADHD meets
-    Innovation! </p> -->
-
-
 </body>
 
 </html>

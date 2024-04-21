@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBacks Function</title>
+</head>
+<body>
+
+    <h1>CallBacks Function</h1>
+
+    <script>
+
+        // Function 
+
+    /**
+     * Function Diff Ways  
+     *  1. Function Declaration - function a() {}
+     *  2. Arrow Function
+    */
+
+    function add() {
+      console.log("Add FUNCTION Called")
+    }
+
+    // Calling the Function
+    add()
+
+    // {} -> Always u need to return 
+    const add2 = () => {
+      return (
+        console.log("Arrow Function")
+      )
+    }
+
+    // Calling the Function
+    add2()
+
+    // Callback - function that is passed as argument to another function
+
+    // addEventListener("click",()=>{})
+
+    function a(xyz) {
+      console.log(xyz)
+      xyz()
+    }
+
+    a(function pass() {
+      console.log("From Pass Function")
+    })
+
+    /** Schedulers
+     * ARE USED TO SCHEDUCE THE EXECUTION OF CALLBACK FUNCTION
+     * Types 
+     * - setInterval() , clearInterval()
+     * - setTimeout() , clearTimeout()
+     * 
+     * 1 sec = 100 millisec
+    **/
+
+    let counter = 0
+
+    // let internalCounter = setInterval(() => {
+    //   counter = counter + 1
+    //   console.log(counter)
+    // }, 3000)
+
+    let internalCounter = setTimeout(function () {
+      counter = counter + 1
+      console.log(counter)
+    }, 3000)
+
+    clearTimeout(internalCounter)
+
+    // clearInterval(internalCounter);
+
+
+
+    </script>
+    
+</body>
+</html>

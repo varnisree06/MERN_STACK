@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <div class="2xl:container bg-red-500">
+    <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 bg-green-400 h-[10vh]">
+      <!--Logo-->
+      <div class="bg-slate-400 flex flex-row justify-between items-center h-[10vh]">
+        <p>Logo</p>
+
+        <!--Hu Bu-->
+        <div class="md:hidden">
+          <svg viewbox="0 0 1024 1024" fill="currentColor" height="1em" width="1em" id="menu">
+            <path
+              d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z" />
+          </svg>
+
+          <svg fill="none" viewbox="0 0 15 15" height="1em" width="1em" id="cross" class="hidden">
+            <path fill="currentColor" fillrule="evenodd"
+              d="M12.854 2.854a.5.5 0 00-.708-.708L7.5 6.793 2.854 2.146a.5.5 0 10-.708.708L6.793 7.5l-4.647 4.646a.5.5 0 00.708.708L7.5 8.207l4.646 4.647a.5.5 0 00.708-.708L8.207 7.5l4.647-4.646z"
+              cliprule="evenodd" />
+          </svg>
+        </div>
+      </div>
+
+      <!--Content-->
+      <div class="bg-yellow-100 hidden md:block" id="content">
+        <ul
+          class="flex flex-col justify-center items-center space-y-4 md:flex-row md:justify-end md:items-center md:space-x-4 h-[100%]">
+          <li id="1">Home</li>
+          <li id="2">Cart</li>
+          <li id="3">About</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    const menuElement = document.getElementById("menu");
+    const crossElement = document.getElementById("cross");
+
+    const contentElement = document.getElementById("content");
+
+    const home = document.getElementById("1");
+    const cart = document.getElementById("2");
+    const about = document.getElementById("3")
+
+
+    menuElement.addEventListener("click", () => {
+      contentElement.classList.remove("hidden");
+      crossElement.classList.toggle("hidden");
+      menuElement.classList.toggle("hidden");
+    })
+
+    crossElement.addEventListener("click", () => {
+      contentElement.classList.add("hidden");
+      crossElement.classList.toggle("hidden");
+      menuElement.classList.toggle("hidden");
+    })
+
+    home.addEventListener("click", () => {
+      contentElement.classList.toggle("hidden");
+      crossElement.classList.toggle("hidden");
+      menuElement.classList.toggle("hidden");
+    })
+
+    cart.addEventListener("click", () => {
+      contentElement.classList.toggle("hidden");
+      crossElement.classList.toggle("hidden");
+      menuElement.classList.toggle("hidden");
+    })
+
+    about.addEventListener("click", () => {
+      contentElement.classList.toggle("hidden");
+      crossElement.classList.toggle("hidden");
+      menuElement.classList.toggle("hidden");
+    })
+
+  </script>
+
+</body>
+
+</html>
